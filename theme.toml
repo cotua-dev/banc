@@ -1,0 +1,9 @@
+name = "Banc"
+description = "Trying out Hugo theme development"
+homepage = "https://github.com/cotua-dev/banc"
+tags = ["website", "beginner", "company", "bank"]
+features = ["not sure yet"]
+min_version = "0.88.1"
+
+[author]
+    name = "Jeffrey Berry"

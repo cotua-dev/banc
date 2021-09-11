@@ -1,0 +1,11 @@
+@import './font';
+@import './mixins';
+@import './variables';
+@import './components/footer';
+@import './components/navigation';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
