@@ -25,6 +25,9 @@
         {{ else }}
             <link rel="stylesheet" href="{{ $styles.Permalink }}"/>
         {{ end }}
+        {{ with resources.Get "images/favicon.ico" }}
+            <link rel="icon" href="{{ .Permalink }}"/>
+        {{ end }}
     </head>
     <body>
         {{ block "header" . }}{{ partial "site-header.html" . }}{{ end }}
@@ -33,5 +36,6 @@
             {{ block "main" . }}{{ end }}
         </main>
         {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+        {{ partial "site-scripts.html" }}
     </body>
 </html>
