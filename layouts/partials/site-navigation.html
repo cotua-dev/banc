@@ -1,1 +1,52 @@
-<pre>navigation</pre>
+<nav class="mbanc-navigation">
+    <div class="navigation-content">
+        <a href="/" aria-label="Home Mbanc Page Link">
+            {{ with resources.Get "images/logo.svg" }}
+                <picture>
+                    <source srcSet="{{ .RelPermalink }}"/>
+                    <img
+                        class="mbanc-logo"
+                        src="{{ .RelPermalink }}"
+                        alt="Mbanc Logo"
+                        loading="lazy"
+                    />
+                </picture>
+            {{ end }}
+        </a>
+        <div class="dropdown-activator">
+            <p class="dropdown-text">
+                Loan Programs
+            </p>
+        </div>
+        <a
+            class="regular-link"
+            href="/licensing"
+            aria-label="Licenses Mbanc Page Link"
+        >Licenses</a>
+        <a
+            class="regular-link"
+            href="/about-us"
+            aria-label="About Us Mbanc Page Link"
+        >About Us</a>
+        <a
+            class="regular-link"
+            href="https://press.mbanc.com"
+            aria-label="Press Mbanc Page Link"
+        >Press</a>
+        <a
+            class="regular-link"
+            href="https://blog.mbanc.com"
+            aria-label="Blog Mbanc Page Link"
+        >Blog</a>
+        <a
+            class="apply-now"
+            href="/prime-jumbo-super-jumbo"
+            aria-label="Prime Jumbo Mbanc Page Link"
+        >Apply Now</a>
+    </div>
+    <button
+        class="mobile-menu-button"
+        type="button"
+        aria-label="Mbanc Mobile Menu Open Button"
+    >meh</button>
+</nav>
